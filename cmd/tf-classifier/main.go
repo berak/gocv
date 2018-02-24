@@ -12,7 +12,7 @@
 //
 // How to run:
 //
-//         go run ./cmd/tf-classifier/main.go 0 [modelfile] [descriptionsfile]
+//     go run ./cmd/tf-classifier/main.go 0 [modelfile] [descriptionsfile]
 //
 // +build example
 
