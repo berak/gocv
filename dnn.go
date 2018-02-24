@@ -34,7 +34,7 @@ func (net *Net) Close() error {
 //
 func (net *Net) Empty() bool {
 	if net.p == nil {
-		return true;
+		return true
 	}
 	return bool(C.Net_Empty((C.Net)(net.p)))
 }
@@ -130,8 +130,6 @@ func ReadNetFromDarknet(prototxt string, model string) Net {
 	defer C.free(unsafe.Pointer(cmodel))
 	return Net{p: unsafe.Pointer(C.Net_ReadNetFromDarknet(cproto, cmodel))}
 }
-
-
 
 // BlobFromImage creates 4-dimensional blob from image. Optionally resizes and crops
 // image from center, subtract mean values, scales values by scalefactor,
