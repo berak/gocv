@@ -43,6 +43,7 @@ cmake -D WITH_IPP=${GRAPHICAL} \
       -D WITH_OPENGL=${GRAPHICAL} \
       -D WITH_QT=${GRAPHICAL} \
       -D BUILD_EXAMPLES=OFF \
+      -D BUILD_SHARED_LIBS=OFF \
       -D BUILD_TESTS=OFF \
       -D BUILD_PERF_TESTS=OFF  \
       -D BUILD_opencv_java=OFF \
